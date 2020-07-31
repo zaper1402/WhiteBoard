@@ -1,0 +1,31 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <canvas class ="board"></canvas>
+        
+        <script>
+            let board =  document.querySelector(".board");
+
+            board.height = window.innerHeight;
+            board.width = window.innerWidth;
+            //draw tool
+            const tool = board.getContext("2d");
+            tool.lineWidth=10;
+
+            //rendering
+            tool.strokeRect(75 , 140 , 150 , 110);
+            tool.fillStyle = "red";
+            tool.fillRect(75 , 140 , 150 , 110);
+
+            //door
+            tool.fillRect(130, 190 , 40, 60);
+        </script>
+    </body>
+</html>
