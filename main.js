@@ -14,7 +14,7 @@ function createWindow(){
 
     //loading file in app
     win.loadFile('index.html').then(function (){
-        win.removeMenu();
+        // win.removeMenu();
         win.maximize();
         win.show();
     });
